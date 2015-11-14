@@ -21,7 +21,7 @@ angular.module('wzpdAPP', ['ui.bootstrap', 'ngAnimate']).controller('CarouselDem
 			text: '4 & Vanilla',
 		});
 	};
-	//$scope.addSlide();
+	$scope.addSlide();
 
 	$scope.items = [];
 	var items = $scope.items;

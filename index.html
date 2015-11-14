@@ -25,13 +25,66 @@
 		<!--
         	作者：137620821@qq.com
         	时间：2015-11-12
+        	描述：log
+        -->
+
+		<div class="log">
+			<div class="logImg"></div>
+			<div class="logTitle"></div>
+		</div>
+		<!--
+            	作者：137620821@qq.com
+            	时间：2015-11-12
+            	描述：顶部导航
+            -->
+		<div class="mainbar">
+			<ul class="nav navbar-nav mainnavbar">
+				<li class="ybsmaON">
+					<a href="index.html">商铺首页</a>
+				</li>
+				<li>
+					<a href="/spzs.html">
+								产品展示
+							</a>
+				</li>
+				<li>
+					<a href="/sptj.html">
+								铺主推荐
+							</a>
+				</li>
+				<li>
+					<a href="/photo.html">
+								公司相册
+							</a>
+				</li>
+				<li>
+					<a href="/news.html">
+								公司新闻
+							</a>
+				</li>
+				<li>
+					<a href="/com.html">
+								公司简介
+							</a>
+				</li>
+				<li>
+					<a href="/contact.html">
+								联系我们
+							</a>
+				</li>
+			</ul>
+		</div>
+		<hr />
+		<!--
+        	作者：137620821@qq.com
+        	时间：2015-11-12
         	描述：图片轮播
         -->
 		<div class="mainCarousel">
 			<div>
 				<carousel interval="myInterval" no-wrap="noWrapSlides">
 					<slide ng-repeat="slide in slides" active="slide.active">
-						<img ng-src="{{slide.image}}">
+						<img ng-src="{{slide.image}}" style="width: 600px;height: 200px;">
 						<div class="carousel-caption">
 							<h4>Slide {{$index}}</h4>
 							<p>{{slide.text}}</p>
@@ -127,8 +180,9 @@
 					</ul>
 				</nav>
 			</div>
-			
+	
 		</div>
+		<hr />
 	</body>
 
 </html>

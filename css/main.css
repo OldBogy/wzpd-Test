@@ -1,96 +1,116 @@
-body{
+body {
 	padding: 0px;
 	margin: 0px;
 }
-.dangerline{
+
+.dangerline {
 	width: 100%;
 	height: 30px;
-	background-color: #000000;
-}
-a{
-	text-decoration:none;
+	background-color: gainsboro;
 }
 
-.log{
+a {
+	text-decoration: none;
+}
+
+.log {
 	width: 1000px;
 	height: 100px;
-	margin: 10px auto ;
+	margin: 10px auto;
 }
-.logImg{
+
+.logImg {
 	width: 100px;
 	height: 100px;
 	float: left;
 	background-image: url(../img/log/412306.jpg);
 }
-.logTitle{
+
+.logTitle {
 	height: 100px;
 	width: 600px;
 	float: left;
 	background-image: url(../img/log/logtitle.jpg);
 	background-repeat: no-repeat;
 }
-.mainnavbar{
-	width: 1000px;
-	background-color: dodgerblue;
+.mainbar{
+	width: 1280px;
+	height:40px;
+	margin: 0px auto;
 }
-.mainnavbar a{
-	color: white;
-}
-.mainnavbar li{
+
+.mainnavbar li {
 	float: left;
 }
-.rightnavbar{
+
+.rightnavbar {
 	width: 200px;
 	height: 600px;
 	float: right;
-	position:fixed;
-    left:65%;
-    top:50%;
+	position: fixed;
+	left: 65%;
+	top: 50%;
 }
-.rbar{
+
+.rbar {
 	width: 196px;
 	border: 1px solid black;
 }
-.rightbar{
+
+.rightbar {
 	width: 196px;
 	margin-top: 3xp;
 }
-.mainCarousel{
-	height: 300px;
-	width: 100%;
+
+.mainCarousel {
+	height: 200px;
+	width: 600px;
+	margin: 10px auto;
 }
 
-.pro li{
+.pro {
+	width: 1280px;
+	height: 100%;
+	margin: 10px auto;
+}
+
+.pro li {
 	list-style-type: none;
 	padding: 2px;
 	border: 1px solid gray;
 }
-.newpro{
+
+.newpro {
 	width: 60%;
 	height: 350px;
-	overflow:auto;
+	overflow: auto;
 }
-.hotpro{
+
+.hotpro {
 	width: 60%;
 	height: 350px;
-	overflow:auto;
+	overflow: auto;
 }
-.recpro{
+
+.recpro {
 	width: 60%;
 	height: 350px;
-	overflow:auto;
+	overflow: auto;
 }
-.imgclass{
+
+.imgclass {
 	width: 180px;
 	height: 150px;
 	margin: 5px;
 	float: left;
 }
-.imgclass img{
+
+.imgclass img {
 	width: 174px;
 	height: 100px;
 }
-.titleclass{
+
+.titleclass {
 	font-family: "arial black";
 	font-size: 14px;
 	text-align: center;
