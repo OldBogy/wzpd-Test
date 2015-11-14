@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html ng-app="wzpdAPP">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link href="http://libs.baidu.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="http://apps.bdimg.com/libs/angular.js/1.3.13/angular.min.js"></script>
+		<script src="http://apps.bdimg.com/libs/angular.js/1.4.0-beta.4/angular-animate.min.js"></script>
+		<script src="http://cdn.bootcss.com/angular-ui-bootstrap/0.13.3/ui-bootstrap.min.js"></script>
+		<script src="http://cdn.bootcss.com/angular-ui-bootstrap/0.13.3/ui-bootstrap-tpls.min.js"></script>
+		<script type="text/javascript" src="js/controller/imgCon.js"></script>
+		<title>wzpd</title>
+	</head>
+
+	<body ng-controller="CarouselDemoCtrl">
+		<!--
+        	作者：137620821@qq.com
+        	时间：2015-11-12
+        	描述：隔离带
+        -->
+		<div class="dangerline"></div>
+
+		<!--
+        	作者：137620821@qq.com
+        	时间：2015-11-12
+        	描述：图片轮播
+        -->
+		<div class="mainCarousel">
+			<div>
+				<carousel interval="myInterval" no-wrap="noWrapSlides">
+					<slide ng-repeat="slide in slides" active="slide.active">
+						<img ng-src="{{slide.image}}">
+						<div class="carousel-caption">
+							<h4>Slide {{$index}}</h4>
+							<p>{{slide.text}}</p>
+						</div>
+					</slide>
+				</carousel>
+			</div>
+		</div>
+		<!--
+        	作者：137620821@qq.com
+        	时间：2015-11-13
+        	描述：主体部分
+        -->
+		<div class="pro">
+			<p style="width: 60%;">&nbsp;&nbsp;第一个标题<a class="text" style="float: right;" href="#">更多&raquo;</a></p>
+			<hr />
+			<div class="newpro">
+
+				<ul>
+					<li ng-repeat="item in items" class="imgclass">
+						<a href="#">
+							<img ng-src="{{item.url}}" />
+						</a>
+						<a href="#" class="titleclass newclass text-center">
+							{{item.title}}
+						</a>
+						<h6 class="priceclass text-center">
+							<span>身高：</span> {{item.price}}
+						</h6>
+					</li>
+				</ul>
+			</div>
+			<p style="width: 60%;">&nbsp;&nbsp;第二个标题<a class="text" style="float: right;" href="#">更多&raquo;</a></p>
+			<hr />
+			<div class="hotpro">
+
+				<ul>
+					<li ng-repeat="item in items" class="imgclass">
+						<a href="#">
+							<img ng-src="{{item.url}}" />
+						</a>
+						<a href="#" class="titleclass hotclass text-center">
+							{{item.title}}
+						</a>
+						<h6 class="priceclass text-center">
+							<span>身高：</span> {{item.price}}
+						</h6>
+					</li>
+				</ul>
+			</div>
+			<p style="width: 60%;">&nbsp;&nbsp;第三个标题<a class="text" style="float: right;" href="#">更多&raquo;</a></p>
+			<hr />
+			<div class="recpro">
+				<ul>
+					<li ng-repeat="item in items" class="imgclass">
+						<a href="#">
+							<img ng-src="{{item.url}}" />
+						</a>
+						<a href="#" class="titleclass recclass text-center">
+							{{item.title}}
+						</a>
+						<h6 class="priceclass text-center">
+							<span>身高：</span> {{item.price}}
+						</h6>
+					</li>
+				</ul>
+			</div>
+			<!--
+            	作者：137620821@qq.com
+            	时间：2015-11-13
+            	描述：右边浮框
+            -->
+			<div class="rightnavbar">
+				<!--
+				作者：137620821@qq.com
+				时间：2015-11-13
+				描述：qq
+				-->
+				<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=137620821&site=qq&menu=yes">
+					<img border="0" src="img/log/QQ.png" alt="点击这里给我发消息" title="点击这里给我发消息" />
+				</a>
+				<nav>
+					<ul class="nav navbar-nav rbar">
+						<li class="rightbar">
+							<a href="">&raquo;第一条</a>
+						</li>
+						<li class="rightbar">
+							<a href="">&raquo;第二条</a>
+						</li>
+						<li class="rightbar">
+							<a href="">&raquo;第三条</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			
+		</div>
+	</body>
+
+</html>
