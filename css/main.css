@@ -22,10 +22,17 @@ a {
 .logImg {
 	width: 100px;
 	height: 100px;
+	border-radius: 15px;
+	border: 1px solid;
 	float: left;
 	background-image: url(../img/log/412306.jpg);
 }
-
+.lgtitle{
+	width: 800px;
+	float: left;
+	font-size: 40px;
+	margin: 30px;
+}
 .logTitle {
 	height: 100px;
 	width: 600px;

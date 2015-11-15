@@ -27,22 +27,22 @@ angular.module('wzpdAPP', ['ui.bootstrap', 'ngAnimate']).controller('CarouselDem
 	var items = $scope.items;
 	$scope.addItems = function() {
 		items.push({
-			url:'/wzpd/img/lb/3.jpg',
+			url:'/wzpd-Test/img/lb/3.jpg',
 			title:'美女',
 			price:'1200'
 		});
 		items.push({
-			url:'/wzpd/img/lb/4.jpg',
+			url:'/wzpd-Test/img/lb/4.jpg',
 			title:'美女',
 			price:'1200'
 		});
 		items.push({
-			url:'/wzpd/img/lb/3.jpg',
+			url:'/wzpd-Test/img/lb/3.jpg',
 			title:'美女',
 			price:'1200'
 		});
 		items.push({
-			url:'/wzpd/img/lb/4.jpg',
+			url:'/wzpd-Test/img/lb/4.jpg',
 			title:'美女',
 			price:'1200'
 		});
